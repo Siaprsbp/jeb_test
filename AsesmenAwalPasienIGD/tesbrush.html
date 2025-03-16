@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gambar dengan Brush</title>
+    <style>
+        .container {
+            position: relative;
+            display: inline-block;
+        }
+        img {
+            display: block;
+            width: 300px; /* Sesuaikan ukuran gambar */
+        }
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img id="bg-image" src="image.png">
+        <canvas id="draw-canvas"></canvas>
+    </div>
+
+    <script>
+        const canvas = document.getElementById("draw-canvas");
+        const ctx = canvas.getContext("2d");
+        const img = document.getElementById("bg-image");
+
+        function resizeCanvas() {
+            canvas.width = img.width;
+            canvas.height = img.height;
+        }
+
+        img.onload = resizeCanvas;
+        window.onresize = resizeCanvas;
+
+        let drawing = false;
+
+        canvas.addEventListener("mousedown", () => drawing = true);
+        canvas.addEventListener("mouseup", () => drawing = false);
+        canvas.addEventListener("mouseleave", () => drawing = false);
+
+        canvas.addEventListener("mousemove", function (e) {
+            if (!drawing) return;
+            const rect = canvas.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+
+            ctx.fillStyle = "rgba(255, 0, 0, 0.025)";  // Warna brush
+            ctx.beginPath();
+            ctx.arc(x, y, 5, 0, Math.PI * 2); // Ukuran brush
+            ctx.fill();
+        });
+    </script>
+</body>
+</html>
