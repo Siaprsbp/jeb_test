@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Format Penolakan Tindakan Kedokteran - RSUD Bumi Panua</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            min-width: 800px;
+            width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .header {
+            text-align: center;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            border: 2px solid black;
+            background-color: #fff;
+            padding: 2px;
+            margin-bottom: 2px;
+        }
+
+        .logo-container {
+            position: relative;
+            width: 100px;
+            text-align: center;
+        }
+
+        .logo {
+            width: 50px;
+            height: auto;
+            margin: 20px;
+            position: absolute;
+            right: 5px;
+        }
+
+        .logo-code {
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 12px;
+            padding: 2px 5px;
+        }
+
+        .hospital-name {
+            text-align: center;
+            flex-grow: 1;
+            margin: 0 20px;
+            padding: 10px 0;
+        }
+
+        .hospital-name h2 {
+            font-size: 16px;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .hospital-name p {
+            font-size: 12px;
+            margin: 5px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #fff;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            vertical-align: top;
+        }
+
+        td, th {
+            padding: 2px 5px;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: #f0f0f0;
+        }
+
+        .form-row {
+            margin-bottom: 2px;
+            background-color: #fff;
+        }
+
+        .signature-section {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .signature-box {
+            text-align: center;
+            width: 30%;
+        }
+
+        .signature-line {
+            border-bottom: 1px solid black;
+            margin: 40px 0 5px 0;
+        }
+
+        .faces {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .face {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            border: 2px solid black;
+            background-color: #f0f0f0;
+        }
+
+        .scale {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            margin-top: 10px;
+        }
+
+        .scale div {
+            width: 30px;
+            text-align: center;
+            padding: 5px;
+            border: 1px solid black;
+        }
+
+        .labels {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px auto;
+            width: 60%;
+            font-weight: bold;
+        }
+
+        .bracket {
+            height: 30px;
+            border-top: 3px solid black;
+            border-left: 3px solid black;
+            border-right: 3px solid black;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .bracket::after {
+            content: '';
+            position: absolute;
+            width: 3px;
+            height: 15px;
+            background: black;
+            left: 0;
+            bottom: -15px;
+        }
+        .bracket::before {
+            content: '';
+            position: absolute;
+            width: 3px;
+            height: 15px;
+            background: black;
+            right: 0;
+            bottom: -15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="border: 2px solid black; margin-bottom: -1px;" class="header">
+        <div class="logo-container">
+            <img src="../logo-kiri.png" alt="Logo Kiri" class="logo">
+        </div>
+        <div style="border-right: 1px solid black; border-left: 1px solid black;" class="hospital-name">
+            <h2>PEMERINTAH KABUPATEN POHUWATO</h2>
+            <h2>RUMAH SAKIT UMUM DAERAH BUMI PANUA</h2>
+            <p>Jl. dr. Herizal Umar Desa Botubilotahu Kec. Marisa Kode Pos 96266</p>
+        </div>
+        <div class="logo-container">
+            <img src="../logo-kanan.png" alt="Logo Kanan" class="logo">
+            <span class="logo-code">RM 3 / IGD</span>
+        </div>
+    </div>
+    <div style="border: 2px solid black; margin-bottom: -1px;">
+        <!-- <h4 style="text-align: center; margin: 2px 0;">FORMAT PENOLAKAN TINDAKAN KEDOKTERAN</h4> -->
+        <table style="margin-bottom: -1px;">
+            <tr>
+                <td style="width: 50%; border-right: 1px solid black;"><p style="text-align: center; padding-inline: 170px; display: flex; height: 70px; align-items: center;">ASESMEN AWAL PASIEN GAWAT DARURAT</p></td>
+                <td style="width: 50%; border-right: 1px solid black; padding-block-end: 50px;">
+                    <div>Nama       : </div>
+                    <div>Tgl. Lahir : </div>
+                    <div>No. RM     : </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div style="border: 1px solid black; margin-bottom: -1px;">
+        <table style="margin-bottom: -1px;">
+            <tr>
+                <td style="width: auto; border-right: 1px solid black;" rowspan="2">
+                    <div style="font-weight: bold;">PETUGAS<br></div>
+                    <div>
+                        <input type="checkbox" id="petugas1" name="petugas1" value="tim_resutasi">
+                        <label for="petugas1"> Tim Resutasi</label><br>
+                        <input type="checkbox" id="petugas2" name="petugas2" value="dokter_triase">
+                        <label for="petugas2"> Dokter Triase</label><br>
+                        <input type="checkbox" id="petugas3" name="petugas3" value="perawat">
+                        <label for="petugas3"> Perawat</label><br>
+                    </div>
+                    <br>
+                    <div style="font-weight: bold;">REPON TIME</div>
+                    <div>Tgl Masuk : 20/12/2004</div>
+                    <div>Jam Masuk : 19:04</div>
+                    <div>Jam Periksa : 19:04</div>
+                </td>
+                <td style="width: auto; border-right: 1px solid black;" rowspan="2">
+                    <div style="font-weight: bold;">TRANSPORTASI KE IGD<br></div>
+                    <div>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1"> Ambulance</label><br>
+                        <input type="checkbox" id="transportigd2" name="transportigd2" value="kendaraanpribadi">
+                        <label for="transportigd2"> Kendaraan Pribadi</label><br>
+                        <input type="checkbox" id="transportigd3" name="transportigd3" value="lainnya">
+                        <label for="transportigd3"> Lainnya : di gotong</label><br>
+                    </div>
+                    <br>
+                    <div style="font-weight: bold;">INSIDEN/KECELAKAAN</div>
+                    <div>Tgl Masuk : 20/12/2004</div>
+                    <div>Jam Masuk : 19:04</div>
+                    <div>Jam Periksa : 19:04</div>
+                </td>
+                <td style="width: auto; border-right: 1px solid black;">
+                    <div style="font-weight: bold;">RUJUKAN</div>
+                    <div>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1"> Ya, dari <span style="text-decoration: underline;">Makam</span></label><br>
+                        <input type="checkbox" id="transportigd2" name="transportigd2" value="kendaraanpribadi">
+                        <label for="transportigd2"> Tidak</label><br>
+                    </div>
+                    <div style="font-weight: bold; padding-top: 30px;">NAMA PENGANTAR PASIEN:</div>
+                    <div style="padding-top: 10px;">
+                        <span style="text-decoration: underline;">Mobil jenazah</span>
+                    </div>
+                </td>
+                <td style="width: auto; border-right: 1px solid black;">
+                    <div style="font-weight: bold;">RUJUKAN</div>
+                    <div>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">TRAUMA</label><br>
+                        <input type="checkbox" id="transportigd2" name="transportigd2" value="kendaraanpribadi">
+                        <label for="transportigd2">NON TRAUMA</label><br>
+                    </div>
+                </td>
+                <td style="width: auto; border-right: 1px solid black;" rowspan="2">
+                    <div style="text-align: center;">Petugas Yang Melakukan Tugas</div>
+                    <div style="padding-block-end: 125px;"></div>
+                    <div style="text-align: center;">(...............................................)</div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><span style="font-weight: bold;">KELUHAN UTAMA</span>&nbsp;: Belum Sahur </td>
+            </tr>
+        </table>
+    </div>
+    <div style="border: 1px solid black; margin-bottom: -1px;">
+        <table style="margin-bottom: -1px; padding-bottom: 25px;">
+            <tr>
+                <td style="width: 150px; border-right: 1px solid black; font-weight: bold;">L TRIASE <span style="font-size: small; font-weight: bold;">Australasian Triage Scale (ATS)</span></td>
+            </tr>
+        </table>
+    </div>
+    <div style="border: 1px solid black; margin-bottom: -1px;">
+        <table style="margin-bottom: -1px; width: 100%;">
+            <tr>
+                <td rowspan="2" style="width: auto;">Pemeriksaan</td>
+                <td style="width: auto;">Kategori 1 Level Resusitasi Ruang Resusitasi</td>
+                <td style="width: auto;">Kategori 2 Level Emergency Ruang Resusitasi</td>
+                <td style="width: auto;">Kategori 3 Level Urgency Ruang Resusitasi</td>
+                <td style="width: auto;">Kategori 4 Level Non-Urgency Ruang Resusitasi</td>
+                <td style="width: auto;">Kategori 5 False-emergency</td>
+            </tr>
+            <tr>
+                <td style="width: auto;">Segera - 5 Menit</td>
+                <td style="width: auto;">Di mulai 10 Menit</td>
+                <td style="width: auto;">Di mulai 30 Menit</td>
+                <td style="width: auto;">Di mulai 60 Menit</td>
+                <td style="width: auto;">Di mulai 120 Menit</td>
+            </tr>
+            <tr>
+                <td style="width: auto;">
+                    <Span style="font-style: italic;">Airway</Span>
+                </td>
+                <td style="width: auto;">
+                    <div>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Sumbatan</label>
+                    </div>
+                </td>
+                <td style="width: auto;">
+                    <div>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Resiko Sumbatan</label>
+                    </div>
+                </td>
+                <td style="width: auto;">
+                    <div>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Bebas</label>
+                    </div>
+                </td>
+                <td style="width: auto;">
+                    <div>
+                        <input type="checkbox" id="transportigd1" name="transportigd1">
+                        <label for="transportigd1">Bebas</label><br>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Aspirasi benda asing</label>
+                    </div>
+                </td>
+                <td style="width: auto;">
+                    <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                    <label for="transportigd1">Bebas</label>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 20px;">
+                    <Span style="font-style: italic;">Breathing & Ventilation</Span>
+                </td>
+                <td style="width: auto;">
+                    <div>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Henti Napas</label><br>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Nafas < 10x/menit</label><br>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Gangguan pernapasan extrem</label><br>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Hipoventiliasi</label>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Distress pernapasan/ sesak napas berat RR > 35x/menit</label><br>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Wheezing</label><br>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Distress Pernapasan berat</label><br>
+                    </div>
+                </td>
+                <td style="width: auto;">
+                    <div>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Nafas 34-32x/menit / Takipnue</label><br>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Spo2 90-95%</label><br>
+                    </div>
+                </td>
+                <td style="width: auto;">
+                    <div>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Normal</label><br>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Kesulitan menelan, tanpa gangguan napas</label><br>
+                    </div>
+                </td>
+                <td style="width: auto;">
+                    <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                    <label for="transportigd1">Normal</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 20px;">
+                    <Span style="font-style: italic;">Circulation</Span>
+                </td>
+                <td style="width: auto;">
+                    <div>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Henti Jantung</label><br>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Nadi tidak teraba</label><br>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Pucat</label><br>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Akral dingin</label><br>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">TD <80 (dewasa) atau syokberat</label>
+                    </div>
+                </td>
+                <td style="width: auto;">
+                    <div>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Nadi < 50x/menit atau Nadi >150x/menit (dewasa)</label><br>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Akral dingin</label><br>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Hipotensi dengan gangguan hemodinamik</label><br>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Pendarahan berat</label><br>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Nyeri dada spesifik jantung</label>
+                    </div>
+                </td>
+                <td style="width: auto;">
+                    <div>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Nadi 120-150x/menit</label><br>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">TD sistolik &ge;160 mmHg</label><br>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Diaslotik &ge;110 mmHg</label><br>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Muntah terus menerus</label><br>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Dehidrasi</label><br>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Reaksi alergi</label><br>
+                    </div>
+                </td>
+                <td style="width: auto;">
+                    <div>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Nadi 100-120</label><br>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Sistolik 120-140 mmHg</label><br>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Diaslotik 80-100 mmHg</label><br>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Nadi teraba kuat angkat</label><br>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Pendarahan ringan</label><br>
+                    </div>
+                </td>
+                <td style="width: auto;">
+                    <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                    <label for="transportigd1">Nadi Normal</label><br>
+                    <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                    <label for="transportigd1">Nadi teraba kuat angkat</label><br>
+                    <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                    <label for="transportigd1">Tekanan darah Normal</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 20px;">
+                    <Span style="font-style: italic;">Disability</Span>
+                </td>
+                <td style="width: auto;">
+                    <div>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">GCS < 9 </label><br>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Kejang berkepanjangan > 10 Menit/Tdk berhenti</label><br>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Gangguan perilaku berat dengan ancaman kekerasan/destruktif</label><br>
+                    </div>
+                </td>
+                <td style="width: auto;">
+                    <div>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">GCS 9-12</label><br>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Nyeri yang sangat berat sebab apapun</label><br>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Keracunan sedative atau tertelan racun</label><br>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Perilaku agresif/ ancaman langsung diri sendiri atau orang lain / agitas berat</label><br>
+                    </div>
+                </td>
+                <td style="width: auto;">
+                    <div>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">GCS > 12</label><br>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Nyeri berat</label><br>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Nyeri non-jantung</label><br>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Kejang (saat ini) <10 menit </label><br>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Cidera kepala dengan penurunan kesadaran</label><br>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Tertekan, resiko menyakiti diri</label><br>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Akut psikotik</label><br>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Gelisah</label><br>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Berpotensi agresif</label><br>
+                    </div>
+                </td>
+                <td style="width: auto;">
+                    <div>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">GCS 15</label><br>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Nyeri sedang</label><br>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Nyeri perut non spesifik</label><br>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Cidera kepala ringan tanpa penurunan kesadaran</label><br>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Kesehatan mental semi mendesak/resiko melukai diri sendiri atau orang lain</label><br>
+                    </div>
+                </td>
+                <td style="width: auto;">
+                    <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                    <label for="transportigd1">GCS 15</label><br>
+                    <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                    <label for="transportigd1">Nyeri minimal tanpa resiko</label><br>
+                    <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                    <label for="transportigd1">Gejala kronis/krisis sosial secara klinis baik</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 20px;">
+                    <Span style="font-style: italic;">Exposure</Span>
+                </td>
+                <td style="width: auto;">
+                    <div>
+                    </div>
+                </td>
+                <td style="width: auto;">
+                    <div>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Mayor Multiple Trauma</label><br>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Demam dengan gejala letargi</label><br>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Trauma Mata acid/ Alkali</label><br>
+                    </div>
+                </td>
+                <td style="width: auto;">
+                    <div>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        
+                    </div>
+                </td>
+                <td style="width: auto;">
+                    <div>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Strain/ Sprain/ Fraktur dengan TTV normal/ minimal nyeri</label><br>
+                    </div>
+                </td>
+                <td style="width: auto;">
+                    <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                    <label for="transportigd1">Luka ringan/ lecet kecil/ luka robek ridak membutuhkan jahitan</label><br>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div style="border: 1px solid black; margin-bottom: -1px;">
+        <table style="margin-bottom: -1px;">
+            <tr>
+                <td></td>
+                <td style="background-color: black; color: white; text-align: center;">TANDA VITAL</td>
+            </tr>
+            <tr>
+                <td>Status Alergi: <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance"> Tidak <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance"> Ya, sebutkan: <span style="text-decoration: underline;">kacang</span></td>
+                <td>PERNAPASAN ...............x&#47;menit       SKOR EWS............</td>
+            </tr>
+            <tr>
+                <td>Riwayat Penyakit:
+                    <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance"> Diabetes 
+                    <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance"> Hipertensi 
+                    <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance"> Jantung 
+                    <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance"> Asma 
+                    <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance"> lain: <span style="text-decoration: underline;">Kejang</span>
+                </td>
+                <td> NADI ...............x&#47;menit       BB : KG</td>
+            </tr>
+            <tr>
+                <td>Riwayat Pengobatan: <span style="text-decoration: underline;">Ruqiah</span></td>
+                <td>TD ...............x&#47;menit       TB : Cm</td>
+            </tr>
+            <tr>
+                <td rowspan="3">
+                    Status Kehamilan
+                    <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                    <label for="transportigd1">Tidak hamil</label>
+
+                    <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                    <label for="transportigd1">Hamil: Gravida.....Para:.......Abortus.....HPHT:..........</label>
+                </td>
+                <td>SaO2............%</td>
+            </tr>
+            <tr>
+                <td>Suhu............C</td>
+            </tr>
+            <tr>
+                <td>GCS: Eye .... Verbal .... Motorik ....... TOTAL : </td>
+            </tr>
+
+        </table>
+    </div>
+    <!-- page2 -->
+    <br>
+    <div style="border: 1px solid black; margin-bottom: -1px;">
+        <table style="margin-bottom: -1px;">
+            <tr>
+                <td rowspan="9"></td>
+                <td colspan="7">SKALA FLACC anak &le; 6 tahun</td>
+                <td rowspan="9"></td>
+                <td rowspan="10">
+                    <div style="text-align: center;">
+                        <h3>Intensitas Nyeri "Wrong Baker Faces Pain Rating Scale"</h3>
+                        
+                        <div class="faces">
+                            <div class="face">😀</div>
+                            <div class="face">🙂</div>
+                            <div class="face">😐</div>
+                            <div class="face">☹️</div>
+                            <div class="face">😢</div>
+                            <div class="face">😭</div>
+                        </div>
+                        <br>
+                        <p>Numeric Rating Scale (NRS) untuk anak > 6 th dan dewasa</p>
+                       
+                        <table style="border: none;">
+                            <tr>
+                                <td>
+                                    <!-- <div class="labels"> -->
+                                        <span>Tidak Nyeri</span>
+                                    <!-- </div> -->
+                                </td>
+                                <td>
+                                    <!-- <div class="labels"> -->
+                                        <span>Nyeri Ringan</span>
+                                    <!-- </div> -->
+                                </td>
+                                <td>
+                                    <!-- <div class="labels"> -->
+                                        <span>Nyeri Sedang</span>
+                                    <!-- </div> -->
+                                </td>
+                                <td>
+                                    <!-- <div class="labels"> -->
+                                        <span>Nyeri Berat</span>
+                                    <!-- </div> -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border: none;">
+                                    <div class="scale"><div>0</div></div>
+                                </td>
+                                <td style="border: none;">
+                                    <div class="scale">
+                                        <div>1</div>
+                                        <div>2</div>
+                                        <div>3</div>
+                                    </div>
+                                </td>
+                                <td style="border: none;">
+                                    <div class="scale">
+                                        <div>4</div>
+                                        <div>5</div>
+                                        <div>6</div>
+                                    </div>
+                                </td>
+                                <td style="border: none;">
+                                    <div class="scale">
+                                        <div>7</div>
+                                        <div>8</div>
+                                        <div>9</div>
+                                        <div>10</div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <p style="text-align: left;">SKOR NYERI: <span style="text-decoration: underline;">6</span></p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="text-align: center;">
+                <td>Pengkajian</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+                <td>Nilai</td>
+            </tr>
+            <tr>
+                <td>Wajah</td>
+                <td>Tersenyum/tidak ada ekspresi khusus</td>
+                <td>Terkadang meringis/menarik diri</td>
+                <td>Sering menggetarkan dagu dan mengatupkan rahang</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Kaki</td>
+                <td>Gerakan normal/relaksasi</td>
+                <td>Tidak tenang/tegang</td>
+                <td>Kaki menendang/menarik diri</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Aktifitas</td>
+                <td>Tidur, posisi normal, mudah bergerak</td>
+                <td>Gerakan menggeliat, berguling, kaku</td>
+                <td>Melengkungkan punggung/Kaku/menghentak</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Menangis</td>
+                <td>Tidak Menangis (bangung/tidur)</td>
+                <td>Mengerang, Merengek</td>
+                <td>Menangis terus, menjerit</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Bersuara</td>
+                <td>Bersuara normal, tenang</td>
+                <td>Tenang bila dipeluk, digendong/diajak bicara</td>
+                <td>Sulit untuk menenangkan</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="font-weight: bold; text-align: center;" colspan="5">Total Skor:</td>
+            </tr>
+            <tr>
+                <td style="font-weight: bold; text-align: center;" colspan="5">Skala 0 = Nyaman 1-3 = Kurang nyaman 4-6 = Nyeri Sedang 7-10 = Nyeri Berat</td>
+            </tr>
+            <tr>
+                <td colspan="9"></td>
+            </tr>
+        </table>
+    </div>
+    <div style="border: 1px solid black; margin-bottom: -1px;">
+        <table style="margin-bottom: -1px;">
+            <tr>
+                <td style="text-align: center; font-weight: bold; font-style: italic;">DEATH ON ARRIVAL</td>
+            </tr>
+        </table>
+    </div>
+    <div style="border: 1px solid black; margin-bottom: -1px;">
+        <table style="margin-bottom: -1px;">
+            <tr>
+                <td>
+                    <div>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1"> Pasien tidak sabar, Tidak berespon, henti napas, henti jantung/refleks Cahaya Hilang, tidak kembali setelah dilakukan resutasi jantung selama 30 menit</label><br>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Terdapat tanda-tanda pasien kematian Lebam Mayat</label>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Kaku Mayat</label>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Penurunan suhu</label>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Pembusukan</label>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Mumifikasi</label>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1">Adip</label>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div style="border: 1px solid black; margin-bottom: -1px; background-color: black; color: #fff;">
+        <span style="margin-left: 5px;">II PENGKAJIAN MEDIS</span>
+    </div>
+    <div style="border: 1px solid black; margin-bottom: -1px;">
+        <span style="margin-left: 5px;">PEMERIKSAAN DOKTER, Pukul: 08:50:05</span>
+    </div>
+    <div style="border: 1px solid black; margin-bottom: -1px;">
+        <table style="margin-bottom: -1px; border-collapse: collapse;">
+            <tr>
+                <td style="border: none" colspan="7">
+                    <div>INTERVENSI PRE-HOSPITAL</div>
+                </td>
+            </tr>
+            <tr>
+                <td style="border: none;">
+                    <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                    <label for="transportigd1">Cervical Collar</label>
+                </td style="border: none;">
+                <td style="border: none;">
+                    <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                    <label for="transportigd1">Defibrilasi</label>
+                </td>
+                <td style="border: none;">
+                    <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                    <label for="transportigd1">VIP</label>
+                </td>
+                <td style="border: none;">
+                    <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                    <label for="transportigd1">Balut / Bidal</label>
+                </td>
+                <td style="border: none;">
+                    <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                    <label for="transportigd1">NGT</label>
+                </td>
+                <td style="border: none;">
+                    <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                    <label for="transportigd1">Obat ..................</label>
+                </td style="border: none;" colspan="2">
+            </tr>
+            <tr>
+                <td style="border: none;">
+                    <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                    <label for="transportigd1">RJP</label>
+                </td>
+                <td style="border: none;">
+                    <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                    <label for="transportigd1">Intubasi</label>
+                </td>
+                <td style="border: none;">
+                    <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                    <label for="transportigd1">WSD</label>
+                </td>
+                <td style="border: none;">
+                    <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                    <label for="transportigd1">Kateter Urin</label>
+                </td>
+                <td style="border: none;">
+                    <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                    <label for="transportigd1">Infus</label>
+                </td>
+                <td style="border: none;">
+                    <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                    <label for="transportigd1">Resusitasi Cairan</label>
+                </td>
+                <td style="width: 350px; border: none; ">
+                    <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                    <label for="transportigd1">Tidak Ada</label>
+                </td>
+            </tr>
+            <tr>
+                <td style="border: none;">
+                    <div>Subjektif</div>
+                    <div style="height: 100px;"></div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div style="border: 1px solid black; margin-bottom: -1px;">
+        <table style="margin-bottom: -1px; border-collapse: collapse;">
+            <tr>
+                <td style="border: none;">
+                    <div>Obyektif:</div>
+                    <div style="display: flex; gap:10px;">
+                        <div style="width: 50%;">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi tenetur nesciunt, quidem provident nisi labore culpa sint omnis! Repellat eos nesciunt laborum quod temporibus velit cum, quasi voluptatibus illum omnis.
+                        </div>
+                        <div style=" width: 50%; display: flex; justify-content: flex-end;">
+                            <div style="position: relative; display: inline-block;">
+                                <img id="bg-image" src="image.png" style="display: block; width: 180px;">
+                                <canvas id="draw-canvas" style="position: absolute; top: 0; left: 0;"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div style="border: 1px solid black; margin-bottom: -1px; background-color: black; color: #fff;">
+        <span style="margin-left: 5px;">PEMERIKSAAN</span>
+    </div>
+    <div style="border: 1px solid black; margin-bottom: -1px;">
+        <table>
+            <tr>
+                <td >
+                    <div>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1"> EKG </label><br>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1"> Radiologi </label><br>
+                        <input type="checkbox" id="transportigd1" name="transportigd1" value="ambulance">
+                        <label for="transportigd1"> Laboratorium </label>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <label for="transportigd1"> Diagnosis </label> <br>
+                        <label for="transportigd1"> Utama : Utama </label> <br>
+                        <label for="transportigd1"> Diagnosis </label> <br>
+                        <label for="transportigd1"> Sekunder : Sekunder</label> <br>
+                    </div>              
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div style="border: 1px solid black; margin-bottom: -1px;">
+        <table>
+
+        </table>
+    </div>
+    <div style="border: 1px solid black; margin-bottom: -1px; background-color: black; color: #fff;">
+        <span style="margin-left: 5px;">PLANNING</span>
+    </div>
+    <div style="border: 1px solid black; margin-bottom: -1px;">
+        <table style="margin-bottom: -1px; width: 100%;">
+            <tr>
+                <td colspan="2" style="font-weight: bold; text-align: center; padding: 5px;">PENOLAKAN TINDAKAN KEDOKTERAN</td>
+            </tr>
+            <tr>
+                <td colspan="2" style="padding: 5px; border-bottom: 0; text-align: justify;">
+                    Yang bertanda tangan dibawah ini, saya nama : ........................... Umur : ...... Tahun, Laki-laki/perempuan*, Alamat : ...........................Dengan ini menyatakan persetujuan untuk dilakukan tindakan ........................... terhadap
+                    saya/anak/istri/suami/ayah/ibu/saudara kandung*/........................... Saya* bernama........................... umur...... Tahun, Laki-laki/Perempuan*, Alamat ...........................<br>
+                    Saya memahami perlunya dan manfaat tindakan tersebut sebagaimana telah dijelaskan seperti diatas
+                    kepada saya, termasuk resiko dan komplikasi yang mungkin timbul.<br>
+                    Saya juga menyadari bahwa oleh karena ilmu kedokteran bukanlah ilmu pasti, maka keberhasilan
+                    tindakan kedokteran bukanlah keniscayaan, melainkan sangat bergantung kepada izin Tuhan Yang Maha
+                    Esa.
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: right; padding: 10px; border-top: 0; border-bottom: 0;">
+                    Marisa,........................... Jam : .........
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="border-top: 0;">
+                    <table style="width: 100%; border: none;">
+                        <tr>
+                            <td style="width: 33%; text-align: center; border: none; border-top: 0;">
+                                Yang Menyatakan<br><br><br><br>
+                                (............................)<br>
+                                <i>Tanda Tangan & Nama Terang</i>
+                            </td>
+                            <td style="width: 33%; text-align: center; border: none; border-top: 0;">
+                                Saksi I<br><br><br><br>
+                                (............................)<br>
+                                <i>Tanda Tangan & Nama Terang</i>
+                            </td>
+                            <td style="width: 33%; text-align: center; border: none; border-top: 0;">
+                                Saksi II<br><br><br><br>
+                                (............................)<br>
+                                <i>Tanda Tangan & Nama Terang</i>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        const canvas = document.getElementById("draw-canvas");
+        const ctx = canvas.getContext("2d");
+        const img = document.getElementById("bg-image");
+    
+        function resizeCanvas() {
+            canvas.width = img.width;
+            canvas.height = img.height;
+        }
+    
+        img.onload = resizeCanvas;
+        window.onresize = resizeCanvas;
+    
+        let drawing = false;
+    
+        canvas.addEventListener("mousedown", () => drawing = true);
+        canvas.addEventListener("mouseup", () => drawing = false);
+        canvas.addEventListener("mouseleave", () => drawing = false);
+    
+        canvas.addEventListener("mousemove", function (e) {
+            if (!drawing) return;
+            const rect = canvas.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+    
+            ctx.fillStyle = "rgba(255, 0, 0, 0.025)";  // Warna brush
+            ctx.beginPath();
+            ctx.arc(x, y, 5, 0, Math.PI * 2); // Ukuran brush
+            ctx.fill();
+        });
+    </script>
+</body>
+
+
+</html>
